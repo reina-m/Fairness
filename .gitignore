@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+.venv*/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Experiment outputs and logs
+expe_log/
+*.ckpt
+*.tfevents.*
+
+# Local dataset/artifacts
+Al_Masri_Reina/
+valid/
+train/
+
+# Generated exports
+*.pdf
