@@ -20,9 +20,7 @@ expe_log/
 *.tfevents.*
 
 # Local dataset/artifacts
-Al_Masri_Reina/
-valid/
-train/
+# Keep dataset tracked in git when needed.
 
 # Generated exports
 *.pdf
