@@ -1,0 +1,17 @@
+numpy
+pandas
+matplotlib
+seaborn
+plotly
+scipy
+scikit-learn
+pillow
+tqdm
+ipython
+ipykernel
+torch
+torchvision
+pytorch-lightning
+torchmetrics
+tensorboard
+aif360
