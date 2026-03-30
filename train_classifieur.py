@@ -259,7 +259,7 @@ def get_class_weights(imgs):
 
 
 def preds_todf(df, dataset, label_decoder, model, preds_col):
-    num_workers = os.cpu_count()
+    num_workers = min(2, os.cpu_count())
     print('num_workers set to :', num_workers)
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     if device =='cuda':
@@ -412,7 +412,7 @@ def train_classifier(
     cb_es = EarlyStopping(monitor="val_loss", patience=10)
     callbacks = [cb_ckpt_best, cb_es]
     ### Execution set up
-    num_workers = os.cpu_count()
+    num_workers = min(2, os.cpu_count())
     print('num_workers set to :', num_workers)
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     if device =='cuda':
